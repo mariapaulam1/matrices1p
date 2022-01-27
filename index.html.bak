@@ -1,0 +1,499 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Matriz de impacto ambiental</title>
+    <!--Idioma español-->
+    <link rel="icon" type="icon/png" href="https://cdn-icons-png.flaticon.com/512/139/139706.png">
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+      function contenido(id){
+      return document.getElementById(id);
+      }
+          function calcularProme(){
+              var n1 = parseInt(contenido("n1").value);
+              var n2 = parseInt(contenido("n2").value);
+              var n3 = parseInt(contenido("n3").value);
+              var n4 = parseInt(contenido("n4").value);
+              var n5 = parseInt(contenido("n5").value);
+              var n6 = parseInt(contenido("n6").value);
+              var n7 = parseInt(contenido("n7").value);
+              var n8 = parseInt(contenido("n8").value);
+              var n9 = parseInt(contenido("n9").value);
+              var n10 = parseInt(contenido("n10").value);
+              var n11 = parseInt(contenido("n11").value);
+              var n12 = parseInt(contenido("n12").value);
+              var total = (n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10 + n11 + n12)/12;
+              contenido("prom").value = total;//Muestra el reusltado en la casilla
+          }
+	</script>
+  </head>
+<body>
+ <body style=" background-color: #edbcf4;">
+    <header class="bg_animate">
+        <div class="header_nav">
+            <div class="contenedor">
+                <h1>matriz de Leopold</h1>
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#">Funcionamiento</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <section class="banner contenedor">
+            <secrion class="banner_title">
+                <h2>Calcula el impacto ambiental <br> de tu empresa</h2>
+                <a href="#" class="guía">¡Empecemos!</a>
+            </secrion>
+            <div class="banner_img">
+			 <img src="img2.png" alt="">
+			<a href='https://.pngtree.com/so/entorno'>entorno png de .pngtree.com/</a>
+			 
+            </div>
+        </section>
+
+        <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
+    </header>
+    <nav>
+      <h1>Bienvenido</h1>
+      <p><br>
+      </p>
+      <tb></tb><tb></tb><br>
+      <table style="border-style: solid; width: 679px; border-color: black;" width="679"
+        border="1px">
+        <tbody>
+          <tr>
+            <td colspan="2" width="56">COMPONENTES</td>
+            <td colspan="2" width="81">FACTORES AMBIENTALES</td>
+            <td width="103">Recepción insumos</td>
+            <td width="102">Limpieza por áreas</td>
+            <td width="112">Almacenamiento de alimentos*</td>
+            <td width="112">Manejo de residuos sólidos&nbsp;</td>
+            <td>Manejo de residuos peligrosos</td>
+            <td>Operaciones de mantenimiento</td>
+            <td>PROMEDIOS POSITIVOS</td>
+            <td>PROMEDIOS NEGATIVOS&nbsp;</td>
+            <td width="90">PROMEDIOS ARITMÉTICOS&nbsp;</td>
+            <td width="111">Impacto por subcomponente</td>
+            <td width="95">Impacto por componente</td>
+          </tr>
+          <tr>
+            <td rowspan="12">Abiótico</td>
+            <td rowspan="12">Físico</td>
+            <td rowspan="4">Agua</td>
+            <td rowspan="2">Calidad del agua superficial</td>
+            <td>&nbsp; <input id="n1" placeholder="impacto1" type="text"> </td>
+            <td>&nbsp; <input id="n3" placeholder="impacto3" type="text"></td>
+            <td>&nbsp; <input id="n5" placeholder="impacto5" type="text"> </td>
+            <td>&nbsp; <input id="n7" placeholder="impacto7" type="text"> </td>
+            <td>&nbsp; <input id="n9" placeholder="impacto9" type="text"> </td>
+            <td>&nbsp; <input id="n11" placeholder="impacto10" type="text"> </td>
+            <td rowspan="2">&nbsp; </td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;
+              <div class="cont" align="center"> <input id="prom" placeholder="promedio1"
+                  type="text"> <button id="boton" onclick="calcularProme()">calcular</button>
+              </div>
+            </td>
+            <td rowspan="4">&nbsp;</td>
+            <td rowspan="6">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp; <input id="n2" placeholder="impacto2" type="text"> </td>
+            <td>&nbsp; <input id="n4" placeholder="impacto4" type="text"> </td>
+            <td>&nbsp; <input id="n6" placeholder="impacto6" type="text"> </td>
+            <td>&nbsp; <input id="n8" placeholder="impacto8" type="text"> </td>
+            <td style="width: 147px;">&nbsp; <input id="n10" placeholder="impacto10"
+                type="text"> </td>
+            <td>&nbsp; <input id="n12" placeholder="impacto11" type="text"> </td>
+          </tr>
+          <tr>
+            <td rowspan="2">Calidad del agua vertida</td>
+            <td style="height: 20px;">&nbsp; <input id="n1" placeholder="impacto13"
+                name="impacto12" type="text"></td>
+            <td>&nbsp;<input id="n15" placeholder="impacto15" type="text"></td>
+            <td>&nbsp;<input id="n17" placeholder="impacto17" type="text"></td>
+            <td>&nbsp;<input id="n14" placeholder="impacto19" type="text"></td>
+            <td>&nbsp;<input id="n14" placeholder="impacto21" type="text"></td>
+            <td>&nbsp;<input id="n14" placeholder="impacto23" type="text"></td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp; <input id="prom2" placeholder="promedio" type="text">
+              <button id="boton" type="submit">calcular</button></td>
+          </tr>
+          <tr>
+            <td>&nbsp;<input id="n14" placeholder="impacto14" type="text"><strong></strong></td>
+            <td>&nbsp;<input id="n16" placeholder="impacto16" type="text"></td>
+            <td>&nbsp;<input id="n18" placeholder="impacto18" type="text"></td>
+            <td>&nbsp;<input id="n20" placeholder="impacto20" type="text"></td>
+            <td>&nbsp;<input id="n22" placeholder="impacto22" type="text"></td>
+            <td>&nbsp;<input id="n24" placeholder="impacto24" type="text"></td>
+          </tr>
+          <tr>
+            <td rowspan="4">Suelo</td>
+            <td rowspan="2">Erosión</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp; <input id="prom" placeholder="promedio" type="text">
+              <button id="boton" type="submit">calcular</button></td>
+            <td rowspan="4"><br>
+            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;<input id="n2" placeholder="impacto+" type="text"></td>
+            <td>&nbsp;<input id="n2" placeholder="impacto+" type="text"></td>
+            <td>&nbsp;<input id="n2" placeholder="impacto+" type="text"></td>
+            <td>&nbsp;<input id="n2" placeholder="impacto+" type="text"></td>
+            <td>&nbsp;<input id="n2" placeholder="impacto+" type="text"></td>
+            <td style="width: 164px;">&nbsp;<input id="n2" placeholder="impacto+"
+                type="text"></td>
+          </tr>
+          <tr>
+            <td rowspan="2">Calidad<br>
+            </td>
+            <td>&nbsp;<input id="n2" placeholder="impacto+" type="text"></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp; <input id="prom" placeholder="promedio" type="text">
+              <button id="boton" type="submit">calcular</button></td>
+            <td rowspan="2">&nbsp; </td>
+          </tr>
+          <tr style="height: 47px;">
+            <td>&nbsp;<input id="n2" placeholder="impacto+" type="text"></td>
+            <td>&nbsp;<input id="n2" placeholder="impactoa" type="text"></td>
+            <td>&nbsp;<input id="n2" placeholder="impacto+" type="text"></td>
+            <td>&nbsp;<input id="n2" placeholder="impacto+" type="text"></td>
+            <td>&nbsp;<input id="n2" placeholder="impacto+" type="text"></td>
+            <td>&nbsp;<input id="n2" placeholder="impacto+" type="text"></td>
+          </tr>
+          <tr>
+            <td rowspan="4">Atmósfera<br>
+            </td>
+            <td rowspan="2">Aire</td>
+            <td "="" <="" td=""><br>
+            </td>
+            <td <="" td=""><br>
+            </td>
+            <td style="height: 20px;">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><br>
+            </td>
+            <td><br>
+            </td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="4">&nbsp;</td>
+            <td rowspan="4">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Ruido</td>
+            <td><br>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp; </td>
+            <td rowspan="2">&nbsp; </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td rowspan="12">Biótico</td>
+            <td rowspan="12">Biológico</td>
+            <td rowspan="6">Fauna</td>
+            <td rowspan="2">Especies en extinción</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="6">&nbsp;</td>
+            <td rowspan="12">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Mamíferos</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Aves</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td rowspan="6">Flora</td>
+            <td rowspan="2">Deforestación</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2"><br>
+            </td>
+            <td rowspan="6">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Utilización del terreno</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Zonas Verdes</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="12">Socio económico</td>
+            <td rowspan="4">Población</td>
+            <td rowspan="2">Salud</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="4">&nbsp;</td>
+            <td rowspan="12">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Generación de vectores</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td rowspan="8">Economía</td>
+            <td rowspan="2">Generación de empleo</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="8">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Turismo</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Comercio</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Recreativo</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </nav>
+  </body>
+</html>

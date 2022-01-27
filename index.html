@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Matriz de impacto ambiental</title>
+    <!--Idioma español-->
+    <link rel="icon" type="icon/png" href="https://cdn-icons-png.flaticon.com/512/139/139706.png">
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+      function contenido(id){
+      return document.getElementById(id);
+      }
+          function calcularProme(){
+              var n1 = parseInt(contenido("n1").value);
+              var n2 = parseInt(contenido("n2").value);
+              var n3 = parseInt(contenido("n3").value);
+              var n4 = parseInt(contenido("n4").value);
+              var n5 = parseInt(contenido("n5").value);
+              var n6 = parseInt(contenido("n6").value);
+              var n7 = parseInt(contenido("n7").value);
+              var n8 = parseInt(contenido("n8").value);
+              var n9 = parseInt(contenido("n9").value);
+              var n10 = parseInt(contenido("n10").value);
+              var n11 = parseInt(contenido("n11").value);
+              var n12 = parseInt(contenido("n12").value);
+              var total = (n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10 + n11 + n12)/12;
+              contenido("prom").value = total;//Muestra el reusltado en la casilla
+          }
+	</script>
+  </head>
+<body>
+ <body style=" background-color: #DAF7A6 ;">
+    <header class="bg_animate">
+        <div class="header_nav">
+            <div class="contenedor">
+                <h1>matriz de Leopold</h1>
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="funcionamiento.html">Funcionamiento</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <section class="banner contenedor">
+            <secrion class="banner_title">
+                <h2>Calcula el impacto ambiental <br> de tu empresa</h2>
+                <a href="matriz.html" class="guía">¡Empecemos!</a>
+				
+            </secrion>
+            <div class="banner_img">
+			 <img src="img2.png" alt="">
+            </div>
+        </section>
+
+        <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
+	 </header>
+  </body>
+</html>
